@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+
+<style>
+    .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  border-radius: 40px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background:darkblue;
+  color:deepskyblue;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: palevioletred;
+  color: white;
+}
+.navbar ul li a:hover{
+        
+       color: brown
+    }
+.mega-menu{
+  width: 800px;
+  overflow: hidden;
+  padding: 10px;
+  margin-top: 10%;
+
+}
+.mega-menu a{
+  text-decoration: none;
+  color:black;
+  margin: 40px;
+  
+}
+.mega-menu .sub-menu-heading{
+  color: darkblue;
+   
+}
+/* .container-fluid {
+  position: relative;
+  text-align: center;
+  color: white;
+} */
+.bottom-left {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  color: white;
+}
+/* .bottom-right {
+  position: absolute;
+  bottom: 240px;
+  left: 110px;
+} */
+blockquote{
+    margin-top: 1%;
+          font-size: 19px;
+          
+        }
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+/* .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+} */
+
+
+ .btn:hover {
+  background-color: #ddd;
+}
+
+
+.btn.active {
+  background-color: #666;
+   color: white;
+} 
+</style>
+</head>
+<body>
+
+
+    
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="logo_transparent.png" style="width:160px;height:140px;" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="font-size: 17px;font-weight: 450;padding-left: 20px;">Find and Reserve <span class="sr-only">(current)</span></a>
+              
+   
+   
+              <!-- <h4 style="font-size: 10px;font-weight: 700;">looking for vacation packages?</h4>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  </div>
+                </div>
+                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
+                <label for="example">Try me...</label>
+                <input placeholder="Select date" type="text" id="example" class="form-control"> 
+                <i class="fa fa-calendar input-prefix" tabindex=0></i>
+                </div>
+                <script>$('.datepicker').datepicker</script>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                 
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+               
+              </form> -->
+            </li>
+
+            
+
+            <li class="nav-item dropdown" >
+              
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" style="font-size: 17px;color: white;" data-toggle="dropdown">
+                Deals and Packages
+              </a>
+              <div class="dropdown-menu mega-menu" aria-labelledby="navbardropdown" style="background-color: aqua;">
+                <div class="row">
+                  
+                  <div class="col-md-3" style="line-height: 1px;">
+                   
+                    
+                  <p><a href="deal.html" style="line-height: 40px;font-size: 19px;">Deals</a></p>
+                  <hr class="col-md-3" style="padding-right: 40px;">
+                    <p><a href="tour.html" style="line-height: 40px;font-size: 19px;">Tours</a></p>
+                    <hr class="col-md-3" style="padding-right: 40px;">
+                    <p><a href="resort.html" style="line-height: 40px;font-size: 19px;">Resorts</a></p>
+                    <hr class="col-md-3"   style="padding-right: 40px;">
+                    
+                </div>
+                <div class="col-md-3" style="line-height: 1px;">
+                 
+                  <p><a href="hotel.html" style="line-height: 50px;font-size: 19px;">Hotels</a></p>
+                  <hr class="col-md-3"  style="padding-right: 40px;">
+                  <p><a href="food.html" style="line-height: 50px;font-size: 19px;">Foods</a></p>
+                  <hr class="col-md-3"  style="padding-right: 40px;">
+
+              </div>
+                  <div class="col-md-3">
+                    <img src="dp.jpg" alt="beach" class="img-fluid" style=" width: 100%;
+                    height: 200px;">
+                  
+                    
+              </div>
+                 
+                <div class="col-md-3" style="line-height: 30px;font-size: 19px;">
+                 <p>Dont miss any offers so hurry up and lets go with us and i hope you will not forget your tour with us </p>
+              </div>
+                </div>
+              </div>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" style="font-size: 17px;color: white;" data-toggle="dropdown">
+                Meetings and Events
+              </a>
+              <div class="dropdown-menu mega-menu" aria-labelledby="navbardropdown" style="background-color: aqua;">
+                <div class="row">
+                  
+                  <div class="col-md-3" style="line-height: 20px;">
+                    
+                   
+                    <p><a href="wedding.html"style="word-spacing:10px;line-height: 50px;font-size: 19px;">Weddings</a></p>
+                    <hr class="col-md-3" style="padding-right: 40px;" >
+                    <p><a href="meetings.html" style="word-spacing:10px;line-height: 50px;font-size: 19px;">Meetings</a></p>
+                    <hr class="col-md-3"  style="padding-right: 40px;">
+                  
+                </div>
+                <div class="col-md-3" style="line-height: 20px;">
+                 
+                  <p><a href="event.html" style="word-spacing: 10px;line-height: 50px;font-size: 19px;">Events</a></p>
+                  <hr class="col-md-3"  style="padding-right: 40px;">
+                  <p><a href="travel.html" style="word-spacing:10px;line-height: 50px;font-size: 19px;">Travel</a></p>
+                  <hr class="col-md-3"  style="padding-right: 40px;">
+             
+              </div>
+                  <div class="col-md-3">
+                    <img src="me.jpg" alt="beach" class="img-fluid" style="width: 950px;height: 180px;">
+                    
+                    
+                    
+                  </div>
+                 
+                <div class="col-md-3" style="line-height: 25px;font-size: 19px;">
+                  <p>Tour for you gives all you the facilities of hotels, foods, travel in your favourite destination which you want.</p>
+              </div>
+                </div>
+              </div>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html" style="font-size: 17px;font-weight: 450;color: white;padding-left: 13px;">About Tour For You</a>
+            </li>
+           
+          </ul>
+
+          <form class="form-inline my-1" >
+            <div class="md-form form-sm my-0" style="padding-left: 15px;">
+              <input class="form-control form-control-sm mr-sm-2 mb-0" type="text" style=" border: 3px solid white;" placeholder="Search"
+                aria-label="Search">
+            </div>
+            <button class="btn btn-outline-white btn-sm my-0" type="submit" style=" padding-left: 10px; color: white;border: 1px solid white;transition:0.8s;">Search</button>
+          </form>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false" style="font-size: 17px;font-weight: 450;color: white;padding-right: 25px;margin-bottom: 10px;">
+                  <i class="fa fa-user" style="max-width: 8px;"></i> Profile </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4" style="background-color: aqua;border:1px solid black;">
+                 
+                  <a class="dropdown-item" href="sign-up.html">Sign up</a>
+                  <a class="dropdown-item" href="login-form.html">Log in</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        
+         
+        </div>
+      </nav>
+   
+    <h1 style="font-size: 45px;font-weight: 800; margin-top: 15%;padding-left: 10px;">TOUR FOR YOU</h1>
+       
+           
+        <img class="img-responsive" src="about.jpg" width="100%" height="600px" style="margin-top: 2%;">
+ 
+        <div class="bottom-left"><h5 style="font-size: 45px;font-weight: 700;">Earn Your Way To Amazing</h5></div>
+        <!-- <div class="bottom-right">
+        <button type="button" class="btn btn-dark px-3"  style="border-radius: 0px;"><a href="joinnow.html" style="color: white">JOIN NOW</button>
+        </div> -->
+    
+        <div class="container">
+             
+                 <h3 style="font-size: 40px;font-weight: 650;margin-top: 3%;text-align: center;">About Our Services</h3>
+            <hr class="col-md-3">
+
+            <div class="row">
+            <div class="card card-cascade wider mt-1 mb-5" style="width: 340px;">
+
+                <!-- Card image -->
+                
+                    <div class="col-xs-12">
+                <div class="view view-cascade overlay">
+                  <img class="card-img-top" src="aun.jpg" alt="Card image cap" style="width: 340px;height: 270px;">
+                  <a href="#!">
+                    <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                  </a>
+                </div>
+                
+        
+                <!-- Card content -->
+                <div class="card-body card-body-cascade text-center" style="height: 270px;">
+        
+                  <!-- Title -->
+                  <h4 class="card-title"><strong>Aun Ali</strong></h4>
+                  <!-- Subtitle -->
+                  <h5 class="blue-text pb-2"><strong>CEO Of Tour For You</strong></h5>
+                  <!-- Text -->
+                  <p class="card-text">Hope you feel freely with us incase of any misunderstanding then contact with me links are given below. </p>
+        
+                  <!-- Linkedin -->
+                  <a class="px-2 fa-lg li-ic"><i class="fa fa-youtube" ></i></a>
+                  <!-- Twitter -->
+                  <a class="px-2 fa-lg tw-ic"><i class="fa fa-twitter"></i></a>
+                  <!-- Dribbble -->
+                  <a class="px-2 fa-lg fb-ic"><i class="fa fa-facebook"></i></a>
+        </div>
+                </div>
+        
+              </div>
+              <div class="col-md-8" style="padding-left: 60px;line-height: 35px;">
+                 <blockquote>We are welcome you in the TOUR FOR YOU here you can find all that you want.
+                Tour for you gives all you the facilities of hotels, foods,travel in your favourite destination which you want.
+                Especially the biggest deals in Tour for you is that you also book your meetings, events, weddings in your famous countries.
+                Certain rates do not apply to this guarantee. For example, a Comparison Rate does not qualify if it is not publicly available, such as negotiated corporate rates, senior or group rates, or rates available through paid memberships (AAA, etc), rates negotiated for extended stays (beyond 30 nights), rates that have different rules such as cancellation or refund policies. We do not accept package rates that include a combination of a room and travel, airfare, cruise, car rental, etc; we cannot guarantee that room plus other components or amenities such as non-breakfast meals, tickets, gas coupons, etc., can be applied to the reservation. Rates on auction websites, on sites that do not disclose the hotel brand until the reservation is completed.
+                </blockquote>
+                </div>
+        </div>
+            <h2 style="font-size: 40px;font-weight: 650;margin-top: 3%;text-align: center;">Tour With Us</h2>
+            <hr class="col-md-3"> 
+        </div>
+        
+       
+        <h2 style="font-weight: 550;">Our Services</h2>
+        <div id="myBtnContainer" style="margin-top: 3%;">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('nature')"> Foods</button>
+          <button class="btn" onclick="filterSelection('cars')"> Hotels</button>
+          <button class="btn" onclick="filterSelection('people')">Resorts</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <h2 style="margin-top: 3%;font-weight: 550;">Countries With Their Food,Resort and Hotels</h2>
+        <div class="row">
+          
+          <div class="column nature">
+            <div class="content">
+                <a href="find-a-home.html"><img src="austrailia/sunset-sydney-australia-opera-house-desktop-backgrounds-free-download-for-windows-wallpaper-preview.jpg" alt="Mountains" style="width:100%"></a>
+              <h4>Australia</h4>
+           
+            </div>
+            
+          </div>
+          <div class="column nature">
+            <div class="content">
+                <a href="find-a-home.html"><img src="europe/europe2.jpg" alt="Lights" style="width:100%"></a>
+              <h4>Europe</h4>
+              
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+                <a href="find-a-home.html"><img src="us.jpg" alt="Nature" style="width:100%"></a>
+              <h4>United States</h4>
+             
+            </div>
+          </div>
+        
+
+          <div class="column nature">
+            <div class="content">
+                <a href="food.html"><img src="Vegemite.jpg" alt="Mountains" style="width:100%"></a>
+              <h4>Food Vegemite</h4>
+           
+            </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <a href="food.html"><img src="Albania – Byrek.jpg" alt="Mountains" style="width:100%"></a>
+                  <h4>Food Albania–Byrek  </h4>
+               
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <a href="food.html"><img src="Apple Pie..jpg" alt="Mountains" style="width:100%"></a>
+                  <h4>Food Apple Pie  </h4>
+               
+                </div>
+            </div>
+            
+          <div class="column cars">
+            <div class="content">
+                <a href="find-a-home.html"> <img src="canada/canada2.jpg" alt="Car" style="width:100%"></a>
+              <h4>Canada</h4>
+           
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+                <a href="find-a-home.html"><img src="paris/city-cityscape-paris-france-wallpaper-preview.jpg" alt="Car" style="width:100%"></a>
+              <h4>Paris</h4>
+              
+            </div>
+          </div>
+         
+          <div class="column cars">
+            <div class="content">
+                <a href="find-a-home.html"><img src="hongkong/honkong.jpg" alt="People" style="width:100%"> <a href="find-a-home.html"></a>
+              <h4>Hongkong</h4>
+              
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+                <a href="hotel.html"><img src="ovollo woolloomooloo.jpg" alt="Mountains" style="width:100%"></a>
+              <h4>Hotel ovollo woolloomooloo</h4>
+           
+            </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <a href="hotel.html"><img src="adlon kempinksi.jpg" alt="Mountains" style="width:100%"></a>
+                  <h4>Hotel Adlon kempinksi  </h4>
+               
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <a href="hotel.html"> <img src="jade-mountain-hotel.jpg" alt="Mountains" style="width:100%"></a>
+                  <h4>Hotel Jade Mountain  </h4>
+               
+                </div>
+            </div>
+          <div class="column people">
+            <div class="content">
+                <a href="find-a-home.html"><img src="dubai/clubhouse-marina-at-marina-yacht-club-1024x683.jpg" alt="People" style="width:100%"></a>
+              <h4>Dubai</h4>
+              
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+                <a href="find-a-home.html"><img src="italy/positano-hanne-lore-koehler.jpg" alt="People" style="width:100%"></a>
+              <h4>Italy</h4>
+              
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+                <a href="find-a-home.html"><img src="germany/germany.jpg" alt="People" style="width:100%"></a>
+              <h4>Germany</h4>
+              
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+              <a href="resort.html"><img src="dubr.jpg" alt="People" style="width:100%"></a>
+              <h4>Anantara Resort</h4>
+              
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+                <a href="resort.html"><img src="itr.jpg" alt="People" style="width:100%"></a>
+              <h4>Le Sera Resort</h4>
+              
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+                <a href="resort.html"><img src="Edelweiss_Lodge.jpg" alt="People" style="width:100%"></a>
+              <h4>Edelweiss Lodge Resort</h4>
+              
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+
+<script>
+        filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+    <!-- Footer -->
+<footer class="page-footer font-small  bg-dark" style="margin-top: 5%;">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left" style="color: white;" >
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+  
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="font-size: 28px;">TOUR FOR YOU</h5>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto bg-primary" style="width: 60px;">
+          <p style="color:skyblue;font-size: 19px;line-height: 32px;">welcome !!! you in a "Tour for you" website hope you will visit your Favorite place in a lower price and keep all facilities in a flexible manner. Here you can avail all the facilities like foods, hotels, resort and especially you also book for events like meetings, weddings etc.   </p>
+
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="font-size: 28px;">OFFERS</h5>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto bg-primary" style="width: 60px;color: peru;">
+  
+          <ul class="list-unstyled" style="font-size:19px;line-height:50px;">
+            <li>
+              <a href="travel.html" style="color: skyblue;">Travel</a>
+            </li>
+            <li>
+              <a href="wedding.html" style="color: skyblue;">Wedding</a>
+            </li>
+            <li>
+              <a href="event.html" style="color: skyblue;">Event</a>
+            </li>
+            <li>
+              <a href="meetings.html" style="color: skyblue;">Meeting</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="font-size: 28px;">TOURS</h5>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto bg-primary" style="width: 60px;color: peru;">
+          <ul class="list-unstyled" style="font-size:19px;line-height:50px;">
+            <li>
+              <a href="deal.html" style="color: skyblue;">Deals</a>
+            </li>
+            <li>
+              <a href="resort.html" style="color: skyblue;">Resorts</a>
+            </li>
+            <li>
+              <a href="food.html" style="color: skyblue;">Foods</a>
+            </li>
+            <li>
+              <a href="hotel.html" style="color: skyblue;">Hotels</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="font-size: 28px;">FACILITIES</h5>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto bg-primary" style="width: 60px;color: peru;">
+  
+          <ul class="list-unstyled" style="font-size:19px;line-height:50px;">
+            <li>
+              <a href="cancellation.html" style="color: skyblue;">Flexible Cancellation</a>
+            </li>
+            <li>
+              <a href="bookhere.html" style="color: skyblue;">Best Rate Guarantee</a>
+            </li>
+            <li>
+              <a href="toclean.html" style="color: skyblue;">comitted to clean</a>
+            </li>
+            <li>
+              <a href="find-a-home.html" style="color: skyblue;">Find a home</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <hr color="white">
+  
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1" style="font-size: 28px;font-weight:700;color:white;">Register Here</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="sign-up.html" class="btn btn-danger btn-rounded" style="font-size: 21px;font-weight: 700;">Sign up!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+  
+    <hr color="white">
+  
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="#" class="fa fa-facebook"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#" class="fa fa-twitter"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#" class="fa fa-youtube"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#" class="fa fa-instagram"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#" class="fa fa-google"></a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 " style="color:white;">© 2020 Copyright:
+      <a href="https://AATourforyou.com/" style="color:skyblue;"> AATourforyou.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+  
+</body>
+</html>

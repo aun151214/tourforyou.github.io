@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resort </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  border-radius: 40px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background:darkblue;
+  color:deepskyblue;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: palevioletred;
+  color: white;
+}
+.navbar ul li a:hover{
+        
+        text-decoration: underline;
+       color: brown
+    }
+.mega-menu{
+  width: 800px;
+  overflow: hidden;
+  padding: 10px;
+  margin-top: 10%;
+
+}
+.mega-menu a{
+  text-decoration: none;
+  color:black;
+  margin: 40px;
+  
+}
+.mega-menu .sub-menu-heading{
+  color: darkblue;
+   
+}
+
+
+    </style>
+</head>
+<body>
+   
+     
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="logo_transparent.png" style="width:160px;height:140px;" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" style="font-size: 17px;font-weight: 450;padding-left: 20px;">Find and Reserve <span class="sr-only">(current)</span></a>
+          
+
+
+          <!-- <h4 style="font-size: 10px;font-weight: 700;">looking for vacation packages?</h4>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
+            <label for="example">Try me...</label>
+            <input placeholder="Select date" type="text" id="example" class="form-control"> 
+            <i class="fa fa-calendar input-prefix" tabindex=0></i>
+            </div>
+            <script>$('.datepicker').datepicker</script>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+             
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+           
+          </form> -->
+        </li>
+
+        
+
+        <li class="nav-item dropdown" >
+          
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" style="font-size: 17px;color: white;" data-toggle="dropdown">
+            Deals and Packages
+          </a>
+          <div class="dropdown-menu mega-menu" aria-labelledby="navbardropdown" style="background-color: aqua;">
+            <div class="row">
+              
+              <div class="col-md-3" style="line-height: 1px;">
+               
+                
+              <p><a href="deal.html" style="line-height: 40px;font-size: 19px;">Deals</a></p>
+              <hr class="col-md-3" style="padding-right: 40px;">
+                <p><a href="tour.html" style="line-height: 40px;font-size: 19px;">Tours</a></p>
+                <hr class="col-md-3" style="padding-right: 40px;">
+                <p><a href="resort.html" style="line-height: 40px;font-size: 19px;">Resorts</a></p>
+                <hr class="col-md-3"   style="padding-right: 40px;">
+                
+            </div>
+            <div class="col-md-3" style="line-height: 1px;">
+             
+              <p><a href="hotel.html" style="line-height: 50px;font-size: 19px;">Hotels</a></p>
+              <hr class="col-md-3"  style="padding-right: 40px;">
+              <p><a href="food.html" style="line-height: 50px;font-size: 19px;">Foods</a></p>
+              <hr class="col-md-3"  style="padding-right: 40px;">
+
+          </div>
+              <div class="col-md-3">
+                <img src="dp.jpg" alt="beach" class="img-fluid" style=" width: 100%;
+                height: 200px;">
+              
+                
+          </div>
+             
+            <div class="col-md-3" style="line-height: 30px;font-size: 19px;">
+             <p>Dont miss any offers so hurry up and lets go with us and i hope you will not forget your tour with us </p>
+          </div>
+            </div>
+          </div>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" style="font-size: 17px;color: white;" data-toggle="dropdown">
+            Meetings and Events
+          </a>
+          <div class="dropdown-menu mega-menu" aria-labelledby="navbardropdown" style="background-color: aqua;">
+            <div class="row">
+              
+              <div class="col-md-3" style="line-height: 20px;">
+                
+               
+                <p><a href="wedding.html"style="word-spacing:10px;line-height: 50px;font-size: 19px;">Weddings</a></p>
+                <hr class="col-md-3" style="padding-right: 40px;" >
+                <p><a href="meetings.html" style="word-spacing:10px;line-height: 50px;font-size: 19px;">Meetings</a></p>
+                <hr class="col-md-3"  style="padding-right: 40px;">
+              
+            </div>
+            <div class="col-md-3" style="line-height: 20px;">
+             
+              <p><a href="event.html" style="word-spacing: 10px;line-height: 50px;font-size: 19px;">Events</a></p>
+              <hr class="col-md-3"  style="padding-right: 40px;">
+              <p><a href="travel.html" style="word-spacing:10px;line-height: 50px;font-size: 19px;">Travel</a></p>
+              <hr class="col-md-3"  style="padding-right: 40px;">
+         
+          </div>
+              <div class="col-md-3">
+                <img src="me.jpg" alt="beach" class="img-fluid" style="width: 950px;height: 180px;">
+                
+                
+                
+              </div>
+             
+            <div class="col-md-3" style="line-height: 25px;font-size: 19px;">
+              <p>Tour for you gives all you the facilities of hotels, foods, travel in your favourite destination which you want.</p>
+          </div>
+            </div>
+          </div>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html" style="font-size: 17px;font-weight: 450;color: white;padding-left: 13px;">About Tour For You</a>
+        </li>
+       
+      </ul>
+
+      <form class="form-inline my-1" >
+        <div class="md-form form-sm my-0" style="padding-left: 15px;">
+          <input class="form-control form-control-sm mr-sm-2 mb-0" type="text" style=" border: 3px solid white;" placeholder="Search"
+            aria-label="Search">
+        </div>
+        <button class="btn btn-outline-white btn-sm my-0" type="submit" style=" padding-left: 10px; color: white;border: 1px solid white;transition:0.8s;">Search</button>
+      </form>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto">
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style="font-size: 17px;font-weight: 450;color: white;padding-right: 25px;margin-bottom: 10px;">
+              <i class="fa fa-user" style="max-width: 8px;"></i> Profile </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4" style="background-color: aqua;border:1px solid black;">
+             
+              <a class="dropdown-item" href="sign-up.html">Sign up</a>
+              <a class="dropdown-item" href="login-form.html">Log in</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    
+     
+    </div>
+  </nav>
+    <h1 style="font-size: 35px;font-weight: 650;text-align: center; margin-top: 15%;">Book Resorts And Make Your Tour Fabulous</h1>
+    <hr class="col-md-6">
+    <img class="img-responsive" src="resort1.jpg" width="100%" height="600px" style="margin-top: 2%;">
+    <h1 style="font-size: 35px;font-weight: 650;text-align: center; margin-top: 5%;">Here Some Top Resorts Of The World</h1>
+    <hr class="col-md-5">
+    <div class="container" style="padding-left: 120px;">
+        <div class="row" style="margin-top: 6%;width: 950px;">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="UnitedStates.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 34px;font-weight: 650;">United States</h4>
+                      <a href="booknow.html" style="color: brown;">Book Now<span class="fa fa-chevron-right" style="padding-left: 8px;color: brown;"></span></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Caribbean.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 34px;font-weight: 650;">Dubai</h4>
+                      <a href="booknow.html" style="color: brown;">Book Now<span class="fa fa-chevron-right" style="padding-left: 8px;color: brown;"></span></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Europe.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 34px;font-weight: 650;">Switzerland</h4>
+                      <a href="booknow.html" style="color: brown;">Book Now<span class="fa fa-chevron-right" style="padding-left: 8px;color: brown;"></span></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 1%;width: 950px;">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Australia.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 34px;font-weight: 650;">Australia</h4>
+                      <a href="booknow.html" style="color: brown;">Book Now<span class="fa fa-chevron-right" style="padding-left: 8px;color: brown;"></span></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Asia.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 34px;font-weight: 650;">Pakistan</h4>
+                      <a href="booknow.html" style="color: brown;">Book Now<span class="fa fa-chevron-right" style="padding-left: 8px;color: brown;"></span></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Africa.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 34px;font-weight: 650;">South Africa</h4>
+                      <a href="booknow.html" style="color: brown;">Book Now<span class="fa fa-chevron-right" style="padding-left: 8px;color: brown;"></span></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 1%;width: 950px;">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Canada.jpg" class="card-img-top" alt="..."height="180px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 34px;font-weight: 650;">Canada</h4>
+                      <a href="booknow.html" style="color: brown;">Book Now<span class="fa fa-chevron-right" style="padding-left: 8px;color: brown;"></span></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="CentralAmerica.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 34px;font-weight: 650;">Ireland</h4>
+                      <a href="booknow.html" style="color: brown;">Book Now<span class="fa fa-chevron-right" style="padding-left: 8px;color: brown;"></span></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="Mexico_Tile.jpg" class="card-img-top" alt="..."height="180px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-size: 34px;font-weight: 650;">Mexico</h4>
+                      <a href="booknow.html" style="color: brown;">Book Now<span class="fa fa-chevron-right" style="padding-left: 8px;color: brown;"></span></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small  bg-dark" style="margin-top: 5%;">
+
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left" style="color: white;" >
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-4 mx-auto">
+    
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="font-size: 28px;">TOUR FOR YOU</h5>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto bg-primary" style="width: 60px;">
+            <p style="color:skyblue;font-size: 19px;line-height: 32px;">welcome !!! you in a "Tour for you" website hope you will visit your Favorite place in a lower price and keep all facilities in a flexible manner. Here you can avail all the facilities like foods, hotels, resort and especially you also book for events like meetings, weddings etc.   </p>
+  
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="font-size: 28px;">OFFERS</h5>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto bg-primary" style="width: 60px;color: peru;">
+    
+            <ul class="list-unstyled" style="font-size:19px;line-height:50px;">
+              <li>
+                <a href="travel.html" style="color: skyblue;">Travel</a>
+              </li>
+              <li>
+                <a href="wedding.html" style="color: skyblue;">Wedding</a>
+              </li>
+              <li>
+                <a href="event.html" style="color: skyblue;">Event</a>
+              </li>
+              <li>
+                <a href="meetings.html" style="color: skyblue;">Meeting</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="font-size: 28px;">TOURS</h5>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto bg-primary" style="width: 60px;color: peru;">
+            <ul class="list-unstyled" style="font-size:19px;line-height:50px;">
+              <li>
+                <a href="deal.html" style="color: skyblue;">Deals</a>
+              </li>
+              <li>
+                <a href="resort.html" style="color: skyblue;">Resorts</a>
+              </li>
+              <li>
+                <a href="food.html" style="color: skyblue;">Foods</a>
+              </li>
+              <li>
+                <a href="hotel.html" style="color: skyblue;">Hotels</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="font-size: 28px;">FACILITIES</h5>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto bg-primary" style="width: 60px;color: peru;">
+    
+            <ul class="list-unstyled" style="font-size:19px;line-height:50px;">
+              <li>
+                <a href="cancellation.html" style="color: skyblue;">Flexible Cancellation</a>
+              </li>
+              <li>
+                <a href="bookhere.html" style="color: skyblue;">Best Rate Guarantee</a>
+              </li>
+              <li>
+                <a href="toclean.html" style="color: skyblue;">comitted to clean</a>
+              </li>
+              <li>
+                <a href="find-a-home.html" style="color: skyblue;">Find a home</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+    
+      <hr color="white">
+    
+      <!-- Call to action -->
+      <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <h5 class="mb-1" style="font-size: 28px;font-weight:700;color:white;">Register Here</h5>
+        </li>
+        <li class="list-inline-item">
+          <a href="sign-up.html" class="btn btn-danger btn-rounded" style="font-size: 21px;font-weight: 700;">Sign up!</a>
+        </li>
+      </ul>
+      <!-- Call to action -->
+    
+      <hr color="white">
+    
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a href="#" class="fa fa-facebook"></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="fa fa-twitter"></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="fa fa-youtube"></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="fa fa-instagram"></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="fa fa-google"></a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3 " style="color:white;">© 2020 Copyright:
+        <a href="https://AATourforyou.com/" style="color:skyblue;"> AATourforyou.com</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+    
+</body>
+</html>

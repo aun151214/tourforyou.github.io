@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+        <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    
+<style>
+  .modal{
+    padding-right: 440px;
+  }
+   .modal-content {
+background-color: turquoise;
+   opacity: 0.9;
+   width:950px;
+   
+  
+}
+</style>
+</head>
+<body>
+  
+<!-- Button to Open the Modal -->
+<div class="text-center" style="margin-top: 20%;">
+  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal">
+      Open modal
+    </button>
+  </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+              <div class="text-right">
+              <h4 class="modal-title" style="font-size: 35px;font-weight: 700;">RESERVE FIRST</h4>
+            </div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+              <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="inputname" style="font-size: 21px;"> Name</label>
+                      <input type="text" class="form-control" id="inputname" placeholder="name">
+                    </div>
+            
+                    <div class="form-group col-md-4">
+                      <label for="inputemail"  style="font-size: 21px;">Email</label>
+                      <input type="email" class="form-control" id="inputemail" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="exampleFormControlSelect1"  style="font-size: 21px;">Rooms</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1 Room: 1 Adult/Room</option>
+                        <option>1 Adult Room</option>
+                        <option>0 Childeren per Room</option>
+                        <option>1 Room</option>
+                      
+                      </select>
+                    </div>
+                  </div>
+                  
+                    <div class="form-row">
+                    <div class="form-group col-md-6" class="date">
+                      
+      
+                      <label for="from"  style="font-size: 21px;">From</label>
+                      <input type="text" class="form-control" id="from" name="from"/>
+                    </div>
+                      <div class="form-group col-md-6" class="date">
+                      <label for="to" style="font-size: 21px;">to</label>
+                      <input type="text" class="form-control" id="to" name="to"/>
+                      </div>
+                  </div>
+                  <script>
+                  $(function() {
+                      var fromDate = $("#from").datepicker({
+                          defaultDate: "+1w",
+                          changeMonth: true,
+                          numberOfMonths: 2,
+                          minDate: new Date(),
+                          onSelect: function(selectedDate) {
+                              var instance = $(this).data("datepicker");
+                              var date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+                              date.setDate(date.getDate()+30);
+                              toDate.datepicker("option", "minDate", date);
+                          }
+                      });
+                      
+                      var toDate = $("#to").datepicker({
+                          defaultDate: "+1w",
+                          changeMonth: true,
+                          numberOfMonths: 2
+                      });
+                  });
+       
+                 </script>
+                 <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputdestination"  style="font-size: 21px;">Destination</label>
+                <input type="text" class="form-control" id="inputdestination" placeholder="where you want to go?">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="exampleFormControlSelect1"  style="font-size: 21px;">Special Rates</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>None</option>
+                  <option>Promo</option>
+                  <option>Senior Discount</option>
+                  <option>Goverment/Military</option>
+                  
+                </select>
+              </div>
+              </div>
+              </div>
+                  
+              
+            <button type="button"   style="font-size: 21px;border-radius: 0%;" class="btn btn-success" data-dismiss="modal">Book Now</button>
+      
+            <button type="button"  style="font-size: 21px;border-radius: 0%;" class="btn btn-danger" data-dismiss="modal">Close</button>
+        
+                </form>
+          </div>
+    
+        
+            
+      
+        </div>
+      </div>
+    </div>    
+   
+</body>
+</html>
